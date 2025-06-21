@@ -1,4 +1,4 @@
-import 'package:crop_recommendation_app/Statistics_Page.dart';
+import 'package:crop_recommendation_app/statistics_Page.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'login_page.dart';
@@ -10,7 +10,7 @@ import 'about_page.dart';
 import 'forecast_page.dart';
 import 'best_crop_page.dart';
 import 'settings_page.dart';
-import 'Statistics_Page.dart';
+import 'statistics_Page.dart';
 import 'product_valorization_page.dart';
 import 'investment_promotion_page.dart';
 import 'land_management_page.dart';

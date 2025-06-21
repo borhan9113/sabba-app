@@ -7,7 +7,7 @@ class PaymentPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('💰 و الإدارة المالية'),
+        title: const Text('💰 الإدارة المالية'),
         centerTitle: true,
         backgroundColor:
             const Color.fromARGB(255, 5, 119, 2), // لون مميز للشريط العلوي
@@ -19,16 +19,7 @@ class PaymentPage extends StatelessWidget {
           const Padding(
             padding: EdgeInsets.all(8.0),
             child: Text(
-              '''
-مرحبًا بك في قسم الدفع والإدارة المالية.
-
-هنا يمكنك إضافة:
-- تقارير مالية
-- طرق الدفع الإلكترونية
-- مراقبة الميزانيات
-- معلومات الدفع للفلاحين
-وغيرها من المعلومات المالية التي ترغب بإضافتها لاحقًا.
-''',
+              '',
               style: TextStyle(fontSize: 16),
               textAlign: TextAlign.justify,
             ),
