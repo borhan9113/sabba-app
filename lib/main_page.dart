@@ -1,7 +1,13 @@
+import 'package:crop_recommendation_app/Statistics_Page.dart';
 import 'package:flutter/material.dart';
 import 'recommendation_page.dart';
 import 'tips_page.dart';
 import 'about_page.dart';
+import 'forecast_page.dart';
+import 'best_crop_page.dart';
+import 'settings_page.dart';
+import 'Statistics_Page.dart';
+import 'payment_page.dart';
 
 class MainPage extends StatelessWidget {
   const MainPage({super.key});
@@ -23,6 +29,23 @@ class MainPage extends StatelessWidget {
               '🔍 توصية بالمحصول',
               const CropRecommendationPage(),
             ),
+            buildButton(
+              context,
+              '💹 أفضل محصول اقتصادي حسب الولاية',
+              const BestCropPage(),
+            ),
+            const SizedBox(height: 16),
+            buildButton(
+              context,
+              '📊 توقع الإنتاج الزراعي',
+              const ForecastPage(),
+            ),
+            const SizedBox(height: 16),
+            buildButton(
+              context,
+              '📊 الإحصائيات الفلاحية',
+              const StatisticsPage(),
+            ),
             const SizedBox(height: 16),
             buildButton(
               context,
@@ -35,11 +58,16 @@ class MainPage extends StatelessWidget {
               'ℹ️ معلومات حول التطبيق',
               const AboutPage(),
             ),
+            buildButton(
+              context,
+              '💰 الإدارة المالية',
+              const PaymentPage(),
+            ),
             const SizedBox(height: 16),
             buildButton(
               context,
               '⚙️ الإعدادات',
-              const Placeholder(),
+              const SettingsPage(),
             ),
           ],
         ),
