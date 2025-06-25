@@ -28,7 +28,7 @@ class _ForecastPageState extends State<ForecastPage> {
       labels = [];
     });
 
-    final url = Uri.parse('http://localhost:5000/forecast');
+    final url = Uri.parse('http://192.168.100.3:5000/forecast');
     final body = jsonEncode({
       'crop': cropController.text.trim(),
       'years': int.parse(yearsController.text.trim()),

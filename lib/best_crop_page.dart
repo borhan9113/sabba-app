@@ -74,7 +74,7 @@ class _BestCropPageState extends State<BestCropPage> {
     });
 
     final url = Uri.parse(
-        'http://localhost:5000/best_crop'); // ✅ عدّل إذا كنت تستعمل IP مختلف
+        'http://192.168.100.3:5000/best_crop'); // ✅ عدّل إذا كنت تستعمل IP مختلف
     final response = await http.post(
       url,
       headers: {"Content-Type": "application/json"},

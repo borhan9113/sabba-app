@@ -21,7 +21,7 @@ class _CropRecommendationPageState extends State<CropRecommendationPage> {
   String recommendation = '';
 
   Future<void> getRecommendation() async {
-    final url = Uri.parse('http://localhost:5000/predict');
+    final url = Uri.parse('http://192.168.100.3:5000/predict');
 
     try {
       final response = await http.post(
